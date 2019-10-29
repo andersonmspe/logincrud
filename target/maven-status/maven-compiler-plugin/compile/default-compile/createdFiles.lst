@@ -1,0 +1,5 @@
+Config.class
+com\cadastrodeusuarios\model\Telefone.class
+com\cadastrodeusuarios\model\Usuario.class
+com\cadastrodeusuarios\service\UsuarioService.class
+com\cadastrodeusuarios\web\UsuariosBean.class
