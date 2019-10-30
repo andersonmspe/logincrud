@@ -22,7 +22,7 @@ public class Telefone implements Serializable {
 	
 	
 	public String completo() {
-		return "( " + ddd + " )" + " " + numero + ", " + " Tipo: " + tipo;
+		return "( " + ddd + " )" + " " + numero + " - " + " Tipo: " + tipo;
 	}
 	
 	public Integer getDdd() {

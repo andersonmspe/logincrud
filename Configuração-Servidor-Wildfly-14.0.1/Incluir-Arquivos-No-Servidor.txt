@@ -1,0 +1,20 @@
+
+Substituir o arquivo standalone-full.xml no diretório do Wildfly: 
+
+wildfly-14.0.1.Final\standalone\configuration
+
+*Esse procedimento possui a configuração da Datasource do postgresql
+
+-----------------------------------------------------------------
+
+
+Criar o diretório "postgresql" dentro de: wildfly-14.0.1.Final\modules\system\layers\base\com
+e no diretório "postgresql" criado, criar o diretório "main" e incluir os dois arquivos:
+
+postgresql-42.2.8.jar
+module.xml
+
+*Esse procedimento possui a configuração o driver do banco de dados do postgresql
+
+
+

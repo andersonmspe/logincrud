@@ -7,7 +7,7 @@
 		lang="pt-br">
 <h:head>
 <meta charset="UTF-8" />
-<title>Insert title here</title>
+<title>Login e Cadastro</title>
 </h:head>
 <body>
 <h1>Realizar Login</h1>
@@ -22,13 +22,17 @@
             <p:outputLabel for="senha" value="Senha:" />
             <p:inputText id="senha" value="#{usuariosBean.usuario.senha}" />
 
-            <p:commandButton value="Enviar" action="#{usuariosBean.envia}" ajax="false">
-            </p:commandButton>
+            
 
         </p:panelGrid>
-        <br/><br/>
+        
+        <br/>
+        
+        <p:commandButton value="Login"  action="#{usuariosBean.envia}" ajax="false"></p:commandButton>
+        
+        <br/><br/><br/>
 
-<p:commandLink action="usuarios" value="Cadastrar Usuário"></p:commandLink>
+<p:commandLink action="usuarios"  value="Cadastrar Usuário"></p:commandLink>
 
 
 </h:form>
