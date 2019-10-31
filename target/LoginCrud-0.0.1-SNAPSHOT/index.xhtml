@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:f="http://xmlns.jcp.org/jsf/core"
+		xmlns:h="http://xmlns.jcp.org/jsf/html"
+		xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+		xmlns:p="http://primefaces.org/ui"
+		lang="pt-br">
+<h:head>
+<meta charset="UTF-8" />
+<title>Login e Cadastro</title>
+</h:head>
+<body>
+<h1>Realizar Login</h1>
+
+<h:form>
+
+ <p:messages id="messages" />
+        <p:panelGrid columns="2">
+            <p:outputLabel for="nome" value="Nome do Usuário:" />
+            <p:inputText id="nome" value="#{usuariosBean.usuario.nome}" />
+
+            <p:outputLabel for="senha" value="Senha:" />
+            <p:inputText id="senha" value="#{usuariosBean.usuario.senha}" />
+
+            
+
+        </p:panelGrid>
+        
+        <br/>
+        
+        <p:commandButton value="Login"  action="#{usuariosBean.envia}" ajax="false"></p:commandButton>
+        
+        <br/><br/><br/>
+
+<p:commandLink action="usuarios"  value="Cadastrar Usuário"></p:commandLink>
+
+
+</h:form>
+
+</body>
+</html>
